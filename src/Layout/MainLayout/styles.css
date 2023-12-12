@@ -1,0 +1,67 @@
+body {
+  --black: #111111;
+  --white: #fdfdfd;
+  --green: #22cc88;
+  --blue: #0055ff;
+  --purple: #8855ff;
+  --red: #ff0055;
+  --orange: #ee4444;
+  --yellow: #ffcc00;
+  --mustard: #ffaa00;
+  scroll-behavior: smooth;
+}
+
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: var(--red);
+  transform-origin: 0%;
+}
+
+.backToTop {
+  width: 45px;
+  height: 45px;
+  bottom: 70%;
+  right: 30px;
+  transition: all linear .5s;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+}
+.backToTop_Show {
+  width: 45px;
+  height: 45px;
+  bottom: 10px;
+  right: 10px;
+  transition: all linear .5s;
+  position: absolute;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+  background: var(--red);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  position: fixed;
+  cursor: pointer;
+  opacity: 1;
+  visibility: visible;
+}
