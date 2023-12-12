@@ -4,7 +4,7 @@
 
 ### [GITHUB SERVER SITE LINK:](https://github.com/taskinahmadalfaruqe/havenManagementServer "GITHUB SERVER SITE LINK")
 
-### [GITHUB CLIENT SIDE LINK:](https://github.com/taskinahmadalfaruqe/havenManagement "GITHUB CLIENT SIDE LINK")
+### [GITHUB CLIENT SIDE LINK:](https://github.com/taskinahmadalfaruqe/havenManagementClient "GITHUB CLIENT SIDE LINK")
 ---
 # ADMIN LOGIN INFORMATION
 ### ADMIN EMAIL: taskinahmadadmin@gmail.com
