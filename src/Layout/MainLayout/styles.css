@@ -46,7 +46,7 @@ body {
 .backToTop_Show {
   width: 45px;
   height: 45px;
-  bottom: 110px;
+  bottom: 100px;
   right: 20px;
   transition: all linear .5s;
   position: absolute;

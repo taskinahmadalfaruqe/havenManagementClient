@@ -60,7 +60,7 @@ const MainLayout = () => {
             <MessengerCustomerChat
                 pageId="104235124306928"
                 appId="317420677841540"
-            />,
+            />
             <motion.div
                 className="progress-bar z-[1111111111111111]"
                 style={{ scaleX: scrollYProgress }}
