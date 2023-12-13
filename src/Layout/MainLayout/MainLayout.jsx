@@ -6,6 +6,7 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import NavBar from "../../Component/Shared/Navbar/Navbar";
 import Footer from "../../Component/Shared/Footer/Footer";
 import './styles.css'
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 const MainLayout = () => {
     const { scrollYProgress } = useScroll();
@@ -51,11 +52,15 @@ const MainLayout = () => {
                         </div>
                 }
             </div>
-            <Box sx={{ padding: 0, paddingTop: { xs: '60px', md: '80px' }}}>
+            <Box sx={{ padding: 0, paddingTop: { xs: '60px', md: '80px' } }}>
 
                 <Outlet></Outlet>
             </Box>
             <Footer></Footer>
+            <MessengerCustomerChat
+                pageId="104235124306928"
+                appId="317420677841540"
+            />,
             <motion.div
                 className="progress-bar z-[1111111111111111]"
                 style={{ scaleX: scrollYProgress }}

@@ -25,7 +25,7 @@ body {
   width: 45px;
   height: 45px;
   bottom: 70%;
-  right: 30px;
+  right: 20px;
   transition: all linear .5s;
   position: absolute;
   border-radius: 100%;
@@ -46,8 +46,8 @@ body {
 .backToTop_Show {
   width: 45px;
   height: 45px;
-  bottom: 10px;
-  right: 10px;
+  bottom: 110px;
+  right: 20px;
   transition: all linear .5s;
   position: absolute;
   border-radius: 100%;
