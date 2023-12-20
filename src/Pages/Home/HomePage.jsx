@@ -25,8 +25,6 @@ const HomePage = () => {
                 <title>Haven || Home</title>
             </Helmet>
             <Banner></Banner>
-            <AboutTheBuilding></AboutTheBuilding>
-
             <Box mt={7}>
                 <Container>
                     <Title heading="Some Apartment" subheading="Do You Want To Show More Then Flow The Vist All Button. Just click On It,"></Title>
@@ -43,6 +41,7 @@ const HomePage = () => {
                     </Box>
                 </Container>
             </Box>
+            <AboutTheBuilding></AboutTheBuilding>
             <Mapbox></Mapbox>
             <Cupon></Cupon>
         </div>
