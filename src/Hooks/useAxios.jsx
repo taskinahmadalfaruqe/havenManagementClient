@@ -6,7 +6,6 @@ const axisoPublic = axios.create({
 
 
 })
-
 const useAxios = () => {
     return axisoPublic;
 };

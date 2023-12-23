@@ -17,8 +17,6 @@ const HomePage = () => {
     const [apartment] = useApartment();
     const navigate = useNavigate();
 
-
-
     return (
         <div className="">
             <Helmet>
