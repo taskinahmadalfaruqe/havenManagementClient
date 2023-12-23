@@ -408,7 +408,7 @@ function NavBar() {
 
                         {/* BIG DIVICE  START */}
                         {/* LOGO  */}
-                        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                        <Box sx={{ flexGrow: 1, display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
                             <AccountBalanceIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} />
                             <Typography
                                 variant="h5"
@@ -431,8 +431,8 @@ function NavBar() {
                         </Box>
                         {/* NAVLINK  */}
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                            <MenuItem onClick={handleCloseNavMenu} >
-                                <Typography sx={{ width: '100%' }}>
+                            <MenuItem onClick={handleCloseNavMenu} sx={{ margin:0, padding:0, }} >
+                                <Typography sx={{ width: '100%', margin:0, padding:0 }}>
                                     <NavLink
                                         to="/"
                                         className={({ isActive }) =>
@@ -450,8 +450,8 @@ function NavBar() {
                                 </Typography>
                             </MenuItem>
 
-                            <MenuItem onClick={handleCloseNavMenu}>
-                                <Typography sx={{ width: '100%' }}>
+                            <MenuItem onClick={handleCloseNavMenu} sx={{ margin:0, padding:0, }}>
+                                <Typography sx={{ width: '100%', margin:0, padding:0 }}>
                                     <NavLink
                                         to="/apartment"
                                         className={({ isActive }) =>
@@ -469,8 +469,8 @@ function NavBar() {
                                 </Typography>
                             </MenuItem>
                             {
-                                user ? <MenuItem onClick={handleCloseNavMenu}>
-                                <Typography sx={{ width: '100%' }}>
+                                user ? <MenuItem onClick={handleCloseNavMenu} sx={{ margin:0, padding:0, }}>
+                                <Typography sx={{ width: '100%', margin:0, padding:0 }}>
                                     <NavLink
                                         to="/dasboard"
                                         className={({ isActive }) =>
