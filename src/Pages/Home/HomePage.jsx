@@ -4,7 +4,7 @@ import AboutTheBuilding from "../../Component/HomePage/AboutTheBuilding/AboutThe
 import Mapbox from "../../Component/HomePage/MapBox/Mapbox";
 import Cupon from "../../Component/HomePage/Coupon/Cupon";
 import useApartment from "../../Hooks/useApartment";
-import { Box, Button, Container, Grid} from "@mui/material";
+import { Box, Button, Container, Grid } from "@mui/material";
 import LodeApartmentPage from "../../Component/ApartmentPage/LodeApartmentPage";
 import Title from "../../Component/Shared/Title/Title";
 import { useNavigate } from "react-router-dom";
@@ -40,7 +40,12 @@ const HomePage = () => {
                 </Container>
             </Box>
             <AboutTheBuilding></AboutTheBuilding>
-            <Mapbox></Mapbox>
+            <div>
+                <div>
+                    <h2>Find US On</h2>
+                </div>
+                <Mapbox></Mapbox>
+            </div>
             <Cupon></Cupon>
         </div>
     );
