@@ -8,6 +8,7 @@ import { Box, Button, Container, Grid } from "@mui/material";
 import LodeApartmentPage from "../../Component/ApartmentPage/LodeApartmentPage";
 import Title from "../../Component/Shared/Title/Title";
 import { useNavigate } from "react-router-dom";
+import ClientReview from "../../Component/HomePage/ClientReview/ClientReview";
 
 
 
@@ -39,6 +40,7 @@ const HomePage = () => {
                     </Box>
                 </Container>
             </Box>
+            <ClientReview></ClientReview>
             <AboutTheBuilding></AboutTheBuilding>
             <div>
                 <div>
