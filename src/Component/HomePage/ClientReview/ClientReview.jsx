@@ -18,7 +18,7 @@ const ClientReview = () => {
       .then((data) => setClient(data));
   }, []);
   return (
-    <Container maxWidth='lg' sx={{ my: '20px', textAlign: 'center' }}  >
+    <Container maxWidth='lg' sx={{ my: '20px', textAlign: 'center', padding:0}}  >
       <Title
         heading="Client Feedback"
         subheading="It seems like you want to provide a description of a client. To do that effectively, you will need to provide more information about the client, their background, and the context in which you want the description. Please provide additional details so I can assist you in creating an appropriate client description.">
@@ -41,7 +41,7 @@ const ClientReview = () => {
           breakpoints={{
             1024: {
               slidesPerView: 3,
-              spaceBetween: 50,
+              spaceBetween: 30,
             },
             768: {
               slidesPerView: 2,
@@ -54,8 +54,8 @@ const ClientReview = () => {
           }}
         >
           {client.map((singleClient, index) => (
-            <SwiperSlide key={index} style={{ background: 'transparent', border: '1px solid #2196f3' }}>
-              <Box display={'flex'} justifyItems={'center'} alignItems={'center'} flexDirection={'column'} gap={1} sx={{ padding: 3, overflow: 'hidden', border: '1px solid none', borderRadius: 1, background: 'transparent' }}>
+            <SwiperSlide key={index} style={{ background: 'transparent', }}>
+              <Box display={'flex'} justifyItems={'center'} alignItems={'center'} flexDirection={'column'} gap={1} sx={{ padding: 5, overflow: 'hidden', border: '1px solid #2196f3', borderRadius: 1,  }}>
                 <Box height={'144px'} width={'144px'} borderRadius={'100%'} overflow={'hidden'} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <img
                     src={singleClient.client_img}
