@@ -7,7 +7,8 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 import "swiper/css";
 import "./styles.css";
-import { Box, Typography } from "@mui/material";
+import { Box, Container } from "@mui/material";
+import Title from "../../Shared/Title/Title";
 
 const ClientReview = () => {
   const [client, setClient] = useState([]);
@@ -16,23 +17,13 @@ const ClientReview = () => {
       .then((res) => res.json())
       .then((data) => setClient(data));
   }, []);
-
   return (
-    <Box className="my-5">
-      <Box className="text-center  lg:my-10 max-w-2xl mx-auto space-y-5 text-base">
-        <Typography variant="h2" className="text-2xl font-bold text-primaryColor font-Oswald">
-          Client Feedback
-        </Typography>
-        <Typography>
-          It seems like you want to provide a description of a client. To do
-          that effectively, you will need to provide more information about the
-          client, their background, and the context in which you want the
-          description. Please provide additional details so I can assist you in
-          creating an appropriate client description.
-        </Typography>
-      </Box>
-
-      <Box className="container dark:text-whiteColor">
+    <Container maxWidth='lg' sx={{ my: '20px', textAlign: 'center' }}  >
+      <Title
+        heading="Client Feedback"
+        subheading="It seems like you want to provide a description of a client. To do that effectively, you will need to provide more information about the client, their background, and the context in which you want the description. Please provide additional details so I can assist you in creating an appropriate client description.">
+      </Title>
+      <Box padding={1}>
         <Swiper
           loop={true}
           pagination={{
@@ -63,16 +54,15 @@ const ClientReview = () => {
           }}
         >
           {client.map((singleClient, index) => (
-            <SwiperSlide key={index}>
-              <Box className="flex justify-center items-center flex-col gap-2 p-2  md:p-5 border border-primaryColor  dark:bg-lightdarkbg overflow-hidden">
-                <Box className="w-36 h-36 rounded-full overflow-hidden ">
+            <SwiperSlide key={index} style={{ background: 'transparent', border: '1px solid #2196f3' }}>
+              <Box display={'flex'} justifyItems={'center'} alignItems={'center'} flexDirection={'column'} gap={1} sx={{ padding: 3, overflow: 'hidden', border: '1px solid none', borderRadius: 1, background: 'transparent' }}>
+                <Box height={'144px'} width={'144px'} borderRadius={'100%'} overflow={'hidden'} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <img
                     src={singleClient.client_img}
                     alt=""
-                    className="h-full w-full  flex justify-center items-center"
                   />
                 </Box>
-                <Box className="text-2xl font-bold text-primaryColor font-Oswald">
+                <Box >
                   {singleClient.name}
                 </Box>
                 <Box>
@@ -120,7 +110,7 @@ const ClientReview = () => {
                     "No Rating Yet"
                   )}
                 </Box>
-                <Box className="text-lg  font-semibold text-center">
+                <Box >
                   {singleClient.client_say}
                 </Box>
               </Box>
@@ -128,7 +118,7 @@ const ClientReview = () => {
           ))}
         </Swiper>
       </Box>
-    </Box>
+    </Container>
   );
 };
 
