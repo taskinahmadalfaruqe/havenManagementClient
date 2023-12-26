@@ -18,12 +18,12 @@ const ClientReview = () => {
       .then((data) => setClient(data));
   }, []);
   return (
-    <Container maxWidth='lg' sx={{ my: '20px', textAlign: 'center', padding:0}}  >
+    <Container maxWidth='lg' sx={{ my: '20px', textAlign: 'center', padding:0, zIndex:-1}}  >
       <Title
         heading="Client Feedback"
         subheading="It seems like you want to provide a description of a client. To do that effectively, you will need to provide more information about the client, their background, and the context in which you want the description. Please provide additional details so I can assist you in creating an appropriate client description.">
       </Title>
-      <Box padding={1}>
+      <Box padding={1} zIndex={'-1'}>
         <Swiper
           loop={true}
           pagination={{
