@@ -1,9 +1,16 @@
 .teamCard{
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #fff;
     transition:  all linear .5s;
     -webkit-transition:  all linear .5s;
     -moz-transition:  all linear .5s;
     -ms-transition:  all linear .5s;
     -o-transition:  all linear .5s;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
 .teamCard:hover .teamIcon{
     display: flex;

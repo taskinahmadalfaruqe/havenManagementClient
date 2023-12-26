@@ -22,6 +22,8 @@ import MakePayment from "../Pages/Dashboard/MemberPage/MakePayment";
 import PaymentHistory from "../Pages/Dashboard/MemberPage/PaymentHistory";
 import PrivetRoute from "./PrivetRoute";
 import AllPaymentsDetails from "../Pages/Dashboard/AdminPage/PaymentsPage/AllPaymentsDetails";
+import ClientReview from "../Component/HomePage/ClientReview/ClientReview";
+import OurTeam from "../Component/HomePage/OurTeam/OurTeam";
 
 const Router = createBrowserRouter([
     {
@@ -36,6 +38,18 @@ const Router = createBrowserRouter([
         {
             path:'/apartment',
             element:<Apartment></Apartment>
+        },
+        {
+            path:'/feedback',
+            element:<ClientReview></ClientReview>
+        },
+        {
+            path:'/aboutus',
+            element:<Apartment></Apartment>
+        },
+        {
+            path:'/ourteam',
+            element:<OurTeam></OurTeam>
         },
         {
             path:'/login',

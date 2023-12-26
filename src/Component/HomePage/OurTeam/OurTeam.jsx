@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import LodeTeamMember from "./LodeTeamMember";
+import Title from "../../Shared/Title/Title";
+import { Box, Container } from "@mui/material";
 
 const OurTeam = () => {
   const [teamMembers, setTeamMembers] = useState([]);
@@ -11,21 +13,28 @@ const OurTeam = () => {
   }, []);
 
   return (
-    <div className="container">
-      <div className=" mt-5 md:p-5 rounded-md">
-        <div className="my-5 mx-auto max-w-2xl space-y-5 text-center p-2 md:p-4">
-          <h2 className="font-Oswald  text-3xl font-semibold text-primaryColor ">
-            Our Team
-          </h2>
-          <p>
-            Our team is a dynamic blend of creative minds and skilled
+    <Container maxWidth={'lg'}>
+      <Box sx={{ mt: 2, border: '1px solid red', borderRadius: '10px' }} className=" mt-5 md:p-5 rounded-md">
+        <Title heading=" Our Team" subheading="Our team is a dynamic blend of creative minds and skilled
             professionals. Together, we work harmoniously to tackle challenges,
             innovate solutions, and drive success. With diverse expertise and
             unwavering dedication, we are committed to achieving excellence and
-            making a positive impact in every endeavor we undertake.
-          </p>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 rounded-md">
+            making a positive impact in every endeavor we undertake."></Title>
+        <Box sx={{
+          display: 'grid',
+          gridTemplateColumns: '1fr',
+          gap: 5,
+          borderRadius: 'md',
+          '@media (min-width: 768px)': {
+            gridTemplateColumns: 'repeat(2, 1fr)',
+          },
+          '@media (min-width: 1024px)': {
+            gridTemplateColumns: 'repeat(3, 1fr)',
+          },
+          '@media (min-width: 1280px)': {
+            gridTemplateColumns: 'repeat(4, 1fr)',
+          },
+        }}>
           {" "}
           {teamMembers.map((singleData) => (
             <LodeTeamMember
@@ -33,9 +42,9 @@ const OurTeam = () => {
               singleData={singleData}
             ></LodeTeamMember>
           ))}
-        </div>
-      </div>
-    </div>
+        </Box>
+      </Box>
+    </Container>
   );
 };
 

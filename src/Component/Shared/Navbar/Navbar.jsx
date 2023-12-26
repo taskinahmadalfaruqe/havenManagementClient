@@ -45,7 +45,7 @@ function NavBar() {
         handelLogOut();
     }
     return (
-        <AppBar position="fixed" style={{position:'fixed', top:'10px', left:0}} >
+        <AppBar>
             <Container maxWidth='xl' sx={{ background: 'none' }}>
                 <Toolbar disableGutters>
                     <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
@@ -465,6 +465,63 @@ function NavBar() {
                                         }
                                     >
                                         Apartment
+                                    </NavLink>
+                                </Typography>
+                            </MenuItem>
+
+                            <MenuItem onClick={handleCloseNavMenu} sx={{ margin:0, padding:0, }}>
+                                <Typography sx={{ width: '100%', margin:0, padding:0 }}>
+                                    <NavLink
+                                        to="/feedback"
+                                        className={({ isActive }) =>
+                                            isActive ? "active" : ""
+                                        }
+                                        style={({ isActive }) =>
+                                            isActive ?
+                                                { backgroundColor: '#42a5f5', color: 'white', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100px' }
+                                                :
+                                                { color: '#000', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100px' }
+                                        }
+                                    >
+                                        Reviews
+                                    </NavLink>
+                                </Typography>
+                            </MenuItem>
+
+                            <MenuItem onClick={handleCloseNavMenu} sx={{ margin:0, padding:0, }}>
+                                <Typography sx={{ width: '100%', margin:0, padding:0 }}>
+                                    <NavLink
+                                        to="/aboutus"
+                                        className={({ isActive }) =>
+                                            isActive ? "active" : ""
+                                        }
+                                        style={({ isActive }) =>
+                                            isActive ?
+                                                { backgroundColor: '#42a5f5', color: 'white', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100px' }
+                                                :
+                                                { color: '#000', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100px' }
+                                        }
+                                    >
+                                       About US
+                                    </NavLink>
+                                </Typography>
+                            </MenuItem>
+
+                            <MenuItem onClick={handleCloseNavMenu} sx={{ margin:0, padding:0, }}>
+                                <Typography sx={{ width: '100%', margin:0, padding:0 }}>
+                                    <NavLink
+                                        to="/ourteam"
+                                        className={({ isActive }) =>
+                                            isActive ? "active" : ""
+                                        }
+                                        style={({ isActive }) =>
+                                            isActive ?
+                                                { backgroundColor: '#42a5f5', color: 'white', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100px' }
+                                                :
+                                                { color: '#000', textDecoration: 'none', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100px' }
+                                        }
+                                    >
+                                       Our Team
                                     </NavLink>
                                 </Typography>
                             </MenuItem>
