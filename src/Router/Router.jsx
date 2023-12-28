@@ -24,6 +24,7 @@ import PrivetRoute from "./PrivetRoute";
 import AllPaymentsDetails from "../Pages/Dashboard/AdminPage/PaymentsPage/AllPaymentsDetails";
 import ClientReview from "../Component/HomePage/ClientReview/ClientReview";
 import OurTeam from "../Component/HomePage/OurTeam/OurTeam";
+import AboutTheBuilding from "../Component/HomePage/AboutTheBuilding/AboutTheBuilding";
 
 const Router = createBrowserRouter([
     {
@@ -45,7 +46,7 @@ const Router = createBrowserRouter([
         },
         {
             path:'/aboutus',
-            element:<Apartment></Apartment>
+            element:<AboutTheBuilding></AboutTheBuilding>
         },
         {
             path:'/ourteam',

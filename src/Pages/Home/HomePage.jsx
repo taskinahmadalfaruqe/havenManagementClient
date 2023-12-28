@@ -42,12 +42,13 @@ const HomePage = () => {
             </Box>
             <ClientReview></ClientReview>
             <AboutTheBuilding></AboutTheBuilding>
-            <div>
+            {/* <div>
                 <div>
                     <h2>Find US On</h2>
                 </div>
-                <Mapbox></Mapbox>
-            </div>
+                
+            </div> */}
+            <Mapbox></Mapbox>
             <Cupon></Cupon>
         </div>
     );
