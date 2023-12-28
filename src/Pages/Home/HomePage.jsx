@@ -9,6 +9,7 @@ import LodeApartmentPage from "../../Component/ApartmentPage/LodeApartmentPage";
 import Title from "../../Component/Shared/Title/Title";
 import { useNavigate } from "react-router-dom";
 import ClientReview from "../../Component/HomePage/ClientReview/ClientReview";
+import OurTeam from "../../Component/HomePage/OurTeam/OurTeam";
 
 
 
@@ -41,6 +42,7 @@ const HomePage = () => {
                 </Container>
             </Box>
             <ClientReview></ClientReview>
+            <OurTeam></OurTeam>
             <AboutTheBuilding></AboutTheBuilding>
             {/* <div>
                 <div>

@@ -26,30 +26,30 @@ const LodeTeamMember = ({ singleData }) => {
 
       <Box>
 
-        <Box border={'1px solid red'} borderRadius={'10px '} overflow={'hidden'} sx={{ width: '100%', height: '285px', position: 'relative' }}>
+        <Box  borderRadius={'10px '} overflow={'hidden'} sx={{ width: '100%', height: '285px', position: 'relative' }}>
           <img
             src={image}
-            style={{ height: '100%', width: '100%', overflow: '', background: 'red', }}
+            style={{ height: '100%', width: '100%', overflow: '' }}
             alt="Team Member"
           />
 
-          <Box sx={{ position: 'absolute', top: 0, right: 0, background: 'red', width: '80px', height: '100%', display: 'flex', justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column' }}>
-            <Box sx={{ cursor: 'pointer', border: '1px solid green', borderRadius: '100%', height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
+          <Box className='afterHover' sx={{ position: 'absolute', top: 0, right: 0, width: '80px', height: '100%', display: 'none', justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column' }}>
+            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
               <Link to={facebook}>
                 <BsFacebook style={{ fontSize: '30px' }}></BsFacebook>
               </Link>
             </Box>
-            <Box sx={{ cursor: 'pointer', border: '1px solid green', borderRadius: '100%', height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <Link to={instagram}>
                 <BsInstagram style={{ fontSize: '30px' }}></BsInstagram>
               </Link>
             </Box>
-            <Box sx={{ cursor: 'pointer', border: '1px solid green', borderRadius: '100%', height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <Link to={github}>
                 <BsGithub style={{ fontSize: '30px' }}></BsGithub>
               </Link>
             </Box>
-            <Box sx={{ cursor: 'pointer', border: '1px solid green', borderRadius: '100%', height: '50px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               <Link to={whatsapp}>
                 <BsWhatsapp style={{ fontSize: '30px' }}></BsWhatsapp>
               </Link>

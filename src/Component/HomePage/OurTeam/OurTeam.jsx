@@ -14,7 +14,7 @@ const OurTeam = () => {
 
   return (
     <Container maxWidth={'lg'}>
-      <Box sx={{ mt: 2, border: '1px solid red', borderRadius: '10px' }} className=" mt-5 md:p-5 rounded-md">
+      <Box sx={{ mt: 2,  borderRadius: '10px' }} className=" mt-5 md:p-5 rounded-md">
         <Title heading=" Our Team" subheading="Our team is a dynamic blend of creative minds and skilled
             professionals. Together, we work harmoniously to tackle challenges,
             innovate solutions, and drive success. With diverse expertise and
