@@ -1,31 +1,7 @@
-.teamCard{
-    padding: 15px;
-    border-radius: 10px;
-    background-color: #fff;
-    transition:  all linear .5s;
-    -webkit-transition:  all linear .5s;
-    -moz-transition:  all linear .5s;
-    -ms-transition:  all linear .5s;
-    -o-transition:  all linear .5s;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-}
-.teamCard:hover .teamIcon{
-    display: flex;
-    color: pink;
-    gap: 5px;
-    transition:  all linear .5s;
-    -webkit-transition:  all linear .5s;
-    -moz-transition:  all linear .5s;
-    -ms-transition:  all linear .5s;
-    -o-transition:  all linear .5s;
-}
 .teamCard:hover .afterHover{
     display: flex;
     background: transparent;
-    background-color: rgba(0, 0, 255, 0.5);
+    background-color: rgba(0, 0, 255, 0.4);
     gap: 5px;
     transition:  all linear .5s;
     -webkit-transition:  all linear .5s;
@@ -34,10 +10,10 @@
     -o-transition:  all linear .5s;
 }
 .socialIcon:hover{
-    color: red;
-    font-size: 50px;
-}
-.socialIcon{
-    color: red;
-    font-size: 50px;
+    color: red !important;
+    transition:  all linear .5s;
+    -webkit-transition:  all linear .5s;
+    -moz-transition:  all linear .5s;
+    -ms-transition:  all linear .5s;
+    -o-transition:  all linear .5s;
 }

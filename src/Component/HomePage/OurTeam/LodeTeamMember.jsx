@@ -60,6 +60,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={facebook}>
                 <BsFacebook
+                className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsFacebook>
               </Link>
@@ -74,6 +75,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={instagram}>
                 <BsInstagram
+                className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsInstagram>
               </Link>
@@ -88,6 +90,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={github}>
                 <BsGithub
+                className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsGithub>
               </Link>
@@ -102,6 +105,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={whatsapp}>
                 <BsWhatsapp
+                className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsWhatsapp>
               </Link>
