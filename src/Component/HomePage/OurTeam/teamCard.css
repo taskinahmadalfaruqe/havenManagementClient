@@ -33,3 +33,11 @@
     -ms-transition:  all linear .5s;
     -o-transition:  all linear .5s;
 }
+.socialIcon:hover{
+    color: red;
+    font-size: 50px;
+}
+.socialIcon{
+    color: red;
+    font-size: 50px;
+}

@@ -23,45 +23,106 @@ const LodeTeamMember = ({ singleData }) => {
       data-aos-duration="2000"
       className="teamCard"
     >
-
       <Box>
-
-        <Box  borderRadius={'10px '} overflow={'hidden'} sx={{ width: '100%', height: '285px', position: 'relative' }}>
+        <Box
+          borderRadius={"10px "}
+          overflow={"hidden"}
+          sx={{ width: "100%", height: "285px", position: "relative" }}
+        >
           <img
             src={image}
-            style={{ height: '100%', width: '100%', overflow: '' }}
+            style={{ height: "100%", width: "100%", overflow: "" }}
             alt="Team Member"
           />
 
-          <Box className='afterHover' sx={{ position: 'absolute', top: 0, right: 0, width: '80px', height: '100%', display: 'none', justifyContent: 'space-around', alignItems: 'center', flexDirection: 'column' }}>
-            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }} >
+          <Box
+            className="afterHover"
+            sx={{
+              position: "absolute",
+              top: 0,
+              right: 0,
+              width: "80px",
+              height: "100%",
+              display: "none",
+              justifyContent: "space-around",
+              alignItems: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Box
+              sx={{
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                color: "red",
+              }}
+            >
               <Link to={facebook}>
-                <BsFacebook style={{ fontSize: '30px' }}></BsFacebook>
+                <BsFacebook
+                  style={{ fontSize: "30px", color: "white" }}
+                ></BsFacebook>
               </Link>
             </Box>
-            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box
+              sx={{
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <Link to={instagram}>
-                <BsInstagram style={{ fontSize: '30px' }}></BsInstagram>
+                <BsInstagram
+                  style={{ fontSize: "30px", color: "white" }}
+                ></BsInstagram>
               </Link>
             </Box>
-            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box
+              sx={{
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <Link to={github}>
-                <BsGithub style={{ fontSize: '30px' }}></BsGithub>
+                <BsGithub
+                  style={{ fontSize: "30px", color: "white" }}
+                ></BsGithub>
               </Link>
             </Box>
-            <Box sx={{ cursor: 'pointer', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+            <Box
+              sx={{
+                cursor: "pointer",
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
               <Link to={whatsapp}>
-                <BsWhatsapp style={{ fontSize: '30px' }}></BsWhatsapp>
+                <BsWhatsapp
+                  style={{ fontSize: "30px", color: "white" }}
+                ></BsWhatsapp>
               </Link>
             </Box>
           </Box>
-
         </Box>
       </Box>
 
-      <Box sx={{ textAlign: 'center', mt: 3 }} >
-        <Typography variant="h2" sx={{ textTransform: 'uppercase', fontWeight: 700, fontSize: '25px' }}>{name}</Typography>
-        <Typography variant="h4" sx={{ textTransform: 'uppercase', fontWeight: 500, fontSize: '15px' }}>{title}</Typography>
+      <Box sx={{ textAlign: "center", mt: 3 }}>
+        <Typography
+          variant="h2"
+          sx={{ textTransform: "uppercase", fontWeight: 700, fontSize: "25px" }}
+        >
+          {name}
+        </Typography>
+        <Typography
+          variant="h4"
+          sx={{ textTransform: "uppercase", fontWeight: 500, fontSize: "15px" }}
+        >
+          {title}
+        </Typography>
       </Box>
     </Box>
   );
