@@ -55,7 +55,7 @@ const ClientReview = () => {
         >
           {client.map((singleClient, index) => (
             <SwiperSlide key={index} style={{ background: 'transparent', }}>
-              <Box display={'flex'} justifyItems={'center'} alignItems={'center'} flexDirection={'column'} gap={1} sx={{ padding: 5, overflow: 'hidden', border: '1px solid #2196f3', borderRadius: 1,  }}>
+              <Box display={'flex'} justifyItems={'center'} alignItems={'center'} flexDirection={'column'} gap={1} sx={{ padding: 5, overflow: 'hidden', border: '1px solid #2196f3', borderRadius: 3 }}>
                 <Box height={'144px'} width={'144px'} borderRadius={'100%'} overflow={'hidden'} sx={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                   <img
                     src={singleClient.client_img}
@@ -67,7 +67,7 @@ const ClientReview = () => {
                 </Box>
                 <Box>
                   {singleClient.rating > 4 ? (
-                    <Box className="text-xl text-orange-400 flex gap-3 flex-row">
+                    <Box display={'flex'} gap={2} fontSize={25} color={'orange'}>
                       <AiFillStar></AiFillStar>
                       <AiFillStar></AiFillStar>
                       <AiFillStar></AiFillStar>
@@ -75,32 +75,32 @@ const ClientReview = () => {
                       <AiFillStar></AiFillStar>
                     </Box>
                   ) : singleClient.rating > 3 ? (
-                    <Box className="text-xl  flex gap-3 flex-row">
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-black"></AiFillStar>
+                    <Box display={'flex'} gap={2} fontSize={25} color={'orange'}>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar style={{color:'black'}}></AiFillStar>
                     </Box>
                   ) : singleClient.rating > 2 ? (
-                    <Box className="text-xl  flex gap-3 flex-row">
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-black"></AiFillStar>
-                      <AiFillStar className="text-black"></AiFillStar>
+                    <Box display={'flex'} gap={2} fontSize={25} color={'orange'}>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar style={{color:'black'}}></AiFillStar>
+                      <AiFillStar style={{color:'black'}}></AiFillStar>
                     </Box>
                   ) : singleClient.rating > 1 ? (
-                    <Box className="text-xl  flex gap-3 flex-row">
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-orange-400"></AiFillStar>
-                      <AiFillStar className="text-black"></AiFillStar>
-                      <AiFillStar className="text-black"></AiFillStar>
-                      <AiFillStar className="text-black"></AiFillStar>
+                    <Box display={'flex'} gap={2} fontSize={25} color={'orange'}>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar ></AiFillStar>
+                      <AiFillStar style={{color:'black'}}></AiFillStar>
+                      <AiFillStar style={{color:'black'}}></AiFillStar>
+                      <AiFillStar style={{color:'black'}}></AiFillStar>
                     </Box>
                   ) : singleClient.rating == 1 ? (
-                    <Box className="text-xl  flex gap-3 flex-row text-black">
-                      <AiFillStar className="text-orange-400"></AiFillStar>
+                    <Box display={'flex'} gap={2} fontSize={25} color={'black'}>
+                      <AiFillStar style={{color:'orange'}}></AiFillStar>
                       <AiFillStar></AiFillStar>
                       <AiFillStar></AiFillStar>
                       <AiFillStar></AiFillStar>

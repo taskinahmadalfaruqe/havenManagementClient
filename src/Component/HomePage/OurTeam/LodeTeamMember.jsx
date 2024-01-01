@@ -18,8 +18,8 @@ const LodeTeamMember = ({ singleData }) => {
   const { facebook, instagram, github, whatsapp } = social_media;
   return (
     <Box
-      data-aos="fade-down"
-      data-aos-easing="linear"
+      data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
       data-aos-duration="2000"
       className="teamCard"
     >
@@ -60,7 +60,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={facebook}>
                 <BsFacebook
-                className="socialIcon"
+                  className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsFacebook>
               </Link>
@@ -75,7 +75,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={instagram}>
                 <BsInstagram
-                className="socialIcon"
+                  className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsInstagram>
               </Link>
@@ -90,7 +90,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={github}>
                 <BsGithub
-                className="socialIcon"
+                  className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsGithub>
               </Link>
@@ -105,7 +105,7 @@ const LodeTeamMember = ({ singleData }) => {
             >
               <Link to={whatsapp}>
                 <BsWhatsapp
-                className="socialIcon"
+                  className="socialIcon"
                   style={{ fontSize: "30px", color: "white" }}
                 ></BsWhatsapp>
               </Link>

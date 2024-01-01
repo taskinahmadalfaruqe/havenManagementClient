@@ -123,7 +123,7 @@ const LodeApartmentPage = ({ ApartmentPageData }) => {
     }
 
     return (
-        <Grid item xs={12} md={6} padding={2} data-aos="fade-up" data-aos-duration="3000">
+        <Grid item xs={12} md={6} padding={2} data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000">
             <Box position={'relative'}>
                 <Card>
                     <CardActionArea>
