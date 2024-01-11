@@ -68,5 +68,4 @@ const AboutTheBuilding = () => {
         </Container>
     );
 };
-
 export default AboutTheBuilding;
