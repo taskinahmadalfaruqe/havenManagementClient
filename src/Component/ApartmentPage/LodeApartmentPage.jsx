@@ -13,6 +13,7 @@ import useAdmin from '../../Hooks/useAdmin';
 import Aos from 'aos';
 import 'aos/dist/aos.css'
 
+
 const LodeApartmentPage = ({ ApartmentPageData }) => {
     const navigate = useNavigate();
     const axsiosSecure = useAxiosSecure();
