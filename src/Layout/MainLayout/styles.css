@@ -10,7 +10,6 @@ body {
   --mustard: #ffaa00;
   scroll-behavior: smooth;
 }
-
 .progress-bar {
   position: fixed;
   top: 0;
